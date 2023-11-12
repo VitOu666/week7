@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(155, 155, 155);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 70%;
+}
+.section {
+    background-color: white ;
+    grid-area: 1/1/4/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3vh;
+    padding: 3vh;
+    align-items: center;
+}
+#item-1 {
+    grid-area: 1/1/2/3;   
+}
+#item-2 {
+    grid-area: 2/1/3/2;
+    background-color:rgb(252, 194, 156);
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+#item-3 {
+    grid-area: 2/2/3/3;
+    background-color:rgb(252, 194, 156);
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+#item-4 {
+    grid-area: 3/1/4/3;
+    background-color:rgb(252, 194, 156);
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.aside {
+    grid-area: 1/3/4/4;
+    background-color: rgb(197, 240, 173);
+    padding-top: 3vh;
+}
+footer {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px;
+    gap: 1vw;
+    padding-top: 3vh;
+    align-items: center;
+}
+.footsect {
+    background-color: white;
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}

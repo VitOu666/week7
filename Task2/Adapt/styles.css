@@ -1,0 +1,118 @@
+@media screen {
+    body {
+        background-color: rgb(155, 155, 155);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 70% 15%;
+    }
+    header {
+        grid-area: 1/1/2/2;
+    }
+    main {
+        grid-area: 2/1/3/2;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .section {
+        background-color: white ;
+        grid-area: 1/1/2/2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 3vh;
+        padding: 3vh;
+        align-items: center;
+    }
+    #item-1 {
+        grid-area: 1/1/2/3;   
+    }
+    #item-2 {
+        grid-area: 2/1/3/2;
+        background-color:rgb(252, 194, 156);
+        font-weight: bold;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    #item-3 {
+        grid-area: 2/2/3/3;
+        background-color:rgb(252, 194, 156);
+        font-weight: bold;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    #item-4 {
+        grid-area: 3/1/4/3;
+        background-color:rgb(252, 194, 156);
+        font-weight: bold;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .aside {
+        grid-area: 1/2/2/3;
+        background-color: rgb(197, 240, 173);
+        padding-top: 3vh;
+    }
+    footer {
+        grid-area: 3/1/4/2;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1vw;
+        padding-top: 3vh;
+        align-items: center;
+    }
+    .footsect {
+        background-color: white;
+        font-weight: bold;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 376px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    #item-1 {
+        grid-area: 1/1/2/2;   
+    }
+    #item-2 {
+        grid-area: 2/1/3/2;
+    }
+    #item-3 {
+        grid-area: 3/1/4/2;
+    }
+    #item-4 {
+        grid-area: 4/1/5/2;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 0.5rem;
+        max-width: 375px;
+    }
+    main {
+        grid-area: 2/1/3/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .aside {
+        display: none;
+    }
+    footer {
+        grid-area: 3/1/4/2;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        
+    }
+}
+    
