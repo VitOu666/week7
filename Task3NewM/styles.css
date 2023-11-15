@@ -1,0 +1,303 @@
+@media screen {
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 1fr 80vh;
+    text-align: center;
+}
+header img {
+    border-bottom: black 1px solid;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vh 80vh 80vh;
+}
+#section1 {
+    background-image: url(./assets/Rectangle\ 1.png);
+    background-color: rgb(37, 68, 68);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10vh;
+}
+h1 {
+    color: white ;
+    font-family: 'crimson pro';
+    font-size: 64px;
+    font-weight: 400;
+}
+#orangeword {
+    color: #e67136;
+    font-weight: 700;
+}
+button {
+    color: white;
+    border: none;
+    border-radius: 16px;
+    background: #E67136;
+    box-shadow: -30px 20px 30px 0px rgba(0, 0, 0, 0.25);
+    width: 222px;
+    padding: 17px 10px;
+    align-items: center;
+    gap: 10px;
+}
+#section2 {
+    background-color: #F5F4F4;
+    display: grid;
+    grid-template-columns: 60vw 39vw;
+    grid-template-rows: 15vh 15vh 30vh 20vh;
+}
+#section2 h2 {
+    grid-area: 1/1/2/2;
+    color:#E67136;
+    font-family: 'crimson pro';
+    font-size: 48px;
+    font-weight: 700;
+}
+#section2 h3 {
+    grid-area: 2/1/3/2;
+    font-family: 'crimson pro';
+    font-size: 32px;
+    font-weight: 500;
+}
+#section2 p {
+    grid-area: 3/1/4/2;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+#section2 button {
+    grid-area: 4/1/5/2;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section2 img {
+    grid-area: 1/2/5/3;
+    height: 70vh;
+    padding-top: 15px;
+}
+#section3 div{
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    gap: 3vw;
+}
+h2 {
+    color:#E67136;
+    font-family: 'crimson pro';
+    font-size: 48px;
+    font-weight: 700;
+}
+h4 {
+    color:black;
+    font-family: 'crimson pro';
+    font-size: 24px;
+    font-weight: 700;
+}
+#section3 p {
+    font-family: 'open sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
+footer{
+    background: rgba(36, 68, 57, 0.8);
+}
+footer section {
+    background: white;
+    border-radius: 40px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 2vh;
+    display: grid;
+    grid-template-rows: 25vh 20vh 10vh;
+    grid-template-columns: 70% 30%;
+}
+footer img {
+    grid-area: 1/1/2/2;
+    align-self: center;
+    padding-left: 2vw;
+}
+#moto {
+    grid-area: 2/1/3/2;
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+#contacts{
+    grid-area: 1/2/2/3;
+    text-align: left;
+    font-family: 'roboto';
+    font-size: 16px;
+    line-height: 15px;
+    padding-left: 1vw;
+}
+#contacts h4{
+    color: #E67136;
+}
+#socials {
+    grid-area: 2/2/3/3;
+    text-align: left;
+    padding-top: 3vh;
+}
+#copy {
+    grid-area: 3/1/4/3;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 200vh 50vh;
+        margin: 0;
+    }
+    header img {
+        width: 172px;
+        padding-top: 3vh;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 60vh 40vh;
+    }
+    #section1 {
+        background-size: cover;
+        padding-top: 0;
+        max-width: 400px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    button {
+        display:flex;
+        border-radius: 8px;
+        width: 164px;
+        height: 25px;
+        padding: 17.5px 10px;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 20vh 10vh 10vh 10vh;
+    }
+    #section2 h2 {
+        font-size: 20px;
+    }
+    #section2 h3 {
+        grid-area: 3/1/4/2;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #section2 p {
+        grid-area: 4/1/5/2;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #section2 button {
+        grid-area: 5/1/6/2;
+    }
+    #section2 img {
+        grid-area: 2/1/3/2;
+        height: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+    }
+    #section3 div{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1vw;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    #section3 p {
+        font-size: 13px;
+        line-height: 10px;
+    }
+    #section3 img {
+        max-width: 8vw;
+    }
+    footer{
+        background: rgba(36, 68, 57, 0.8);
+    }
+    footer section {
+        border-radius: 20px;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 25vh 20vh 10vh;
+        grid-template-columns: 70% 30%;
+    }
+    footer img {
+        grid-area: 1/1/2/2;
+        align-self: center;
+        padding-left: 2vw;
+    }
+    #moto {
+        grid-area: 2/1/3/2;
+        font-family: 'Crimson Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        padding-left: 2vw;
+        padding-right: 4vw;
+    }
+    #contacts{
+        grid-area: 1/2/2/3;
+        text-align: left;
+        font-family: 'roboto';
+        font-size: 16px;
+        line-height: 15px;
+        padding-left: 1vw;
+    }
+    #contacts h4{
+        color: #E67136;
+    }
+    #socials {
+        grid-area: 2/2/3/3;
+        text-align: left;
+        padding-top: 3vh;
+    }
+    #copy {
+        grid-area: 3/1/4/3;
+        font-family: 'roboto';
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
